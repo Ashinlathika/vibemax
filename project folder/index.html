@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Dark background */
+            color: #fff; /* White text */
+        }
+
+        .navbar {
+            background-color: #121212;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar input {
+            width: 300px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar button {
+            background-color: #1DB954; /* Spotify Green */
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #121212;
+            width: 250px;
+            padding: 20px;
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            color: #1DB954; /* Spotify Green */
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .popular-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .artist-grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .artist, .album {
+            text-align: center;
+        }
+
+        .artist img, .album img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .albums-grid {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .album img {
+            border-radius: 10px;
+            width: 120px;
+            height: 120px;
+        }
+        
+        /* Footer styling */
+        .footer {
+            background-color: #121212;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <input type="text" placeholder="What do you want to play?">
+        <div>
+            <button>Log in</button>
+            <button>Sign up</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Sidebar section -->
+        <div class="sidebar">
+            <h3>Your Library</h3>
+            <a href="#">Create your first playlist</a>
+            <a href="#">Let's find some podcasts to follow</a>
+        </div>
+
+        <!-- Main content section -->
+        <div class="content">
+            <!-- Popular artists section -->
+            <div class="popular-section">
+                <h2>Popular Artists</h2>
+                <div class="artist-grid">
+                    <div class="artist">
+                        <img src="E:\project folder\pritam.jpg" alt="Pritam">
+                        <p>Pritam</p>
+                    </div>
+                    <div class="artist">
+                        <img src="E:\project folder\a r rahman.jpg" alt="A.R. Rahman">
+                        <p>A.R. Rahman</p>
+                    </div>
+                    <div class="artist">
+                        <img src="E:\project folder\sachin-jigar.jpg" alt="Sachin-Jigar">
+                        <p>Sachin-Jigar</p>
+                    </div>
+                    <div class="artist">
+                        <img src="E:\project folder\arijit singh.jpg" alt="Arijit Singh">
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="artist">
+                        <img src="E:\project folder\anirudh ravichander.jpg" alt="Anirudh Ravichander">
+                        <p>Anirudh Ravichander</p>
+                    </div>
+                    <div class="artist">
+                        <img src="E:\project folder\atif aslam.jpg" alt="Atif Aslam">
+                        <p>Atif Aslam</p>
+                    </div>
+                </div>
+            </div>
+<div class="popular-section">
+        <h2>Popular Albums</h2>
+        <div class="album-grid">
+            <div class="album">
+                <img src="E:\project folder\kanave kanave.jpg" alt="Kanave kanave">
+                <p>Kanave kanave</p>
+                <audio controls>
+                    <source src="E:\project folder\kanave kanave.mp.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="album">
+                <img src="E:\project folder\mayonae.jpg" alt="Mayonae">
+                <p>Mayonae</p>
+                <audio controls>
+                    <source src="E:\project folder\mayoney.mp.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="album">
+                <img src="E:\project folder\paapa paattu.jpg" alt="Paapa paattu">
+                <p>Paapa paattu</p>
+                <audio controls>
+                    <source src="E:\project folder\paapa paattu.mp.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="album">
+                <img src="E:\project folder\rowdy baby.jpg" alt="Rowdy baby">
+                <p>Rowdy baby</p>
+                <audio controls>
+                    <source src="E:\project folder\rowdy baby.mp.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="album">
+                <img src="E:\project folder\thee thalapathy.jpg" alt="Thee Thalapathy">
+                <p>Thee Thalapathy</p>
+                <audio controls>
+                    <source src="E:\project folder\thee thalapathy.mp.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="album">
+                <img src="E:\project folder\yayum.jpg" alt="Yayum">
+                <p>Yayum</p>
+                <audio controls>
+                    <source src="E:\project folder\yayum.mp.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
